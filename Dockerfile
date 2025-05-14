@@ -1,10 +1,11 @@
-FROM python:3.11
+FROM python:3.11-slim
 
 WORKDIR /app
 
 COPY requirements.txt .
-COPY kaggle.py .
+COPY kaggle.py .        # <— aquí el punto como destino
 
-RUN pip install -r requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
 
 CMD ["python", "kaggle.py"]
+
