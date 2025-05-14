@@ -1,4 +1,4 @@
-python -m pip install "pymongo[srv]"
+python -m 
 pandas
 MongoClient
 quote_plus
