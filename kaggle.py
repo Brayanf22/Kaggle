@@ -3,8 +3,6 @@ from pymongo import MongoClient
 import pandas as pd
 from urllib.parse import quote_plus
 
-
-
 # Construir URI de conexión
 URI = f"mongodb+srv://Brayan:1033684238Bf@cluster0.m3o27.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0"
 
