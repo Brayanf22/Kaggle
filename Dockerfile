@@ -3,8 +3,8 @@ FROM python:3.11
 WORKDIR /app
 
 COPY requirements.txt .
-COPY Kaggle.py .
+COPY kaggle.py.py .
 
 RUN pip install -r requirements.txt
 
-CMD ["python", "Kaggle.py"]
+CMD ["python", "kaggle.py"]
